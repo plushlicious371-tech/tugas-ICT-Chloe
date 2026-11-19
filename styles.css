@@ -1,0 +1,302 @@
+
+body {
+    background-color: #f5f1e8;
+    font-family: Arial;
+    padding: 30px;
+}
+
+/* MAIN LAYOUT */
+.Chloe-main-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 25px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.Chloe-left-column {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-shrink: 0;
+}
+
+.Chloe-right-column {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* PROFILE */
+.Chloe-profile-card {
+    width: 280px;
+    height: 380px;
+    background-color: #fffdf7;
+    border: 3px solid #18243d;
+    border-radius: 0 65px 65px 0;
+    box-shadow: 8px 8px 0 #20b9aa;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.Chloe-profile-content {
+    text-align: center;
+    width: 100%;
+}
+
+.Chloe-profile-image {
+    width: min(180px, 100%);
+    aspect-ratio: 1 / 1;
+    border: 3px solid #18243d;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 15px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 0 #87cefa;
+}
+
+.Chloe-profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.Chloe-grade {
+    font-size: 18px;
+    margin: 0;
+}
+
+/* SIDEBAR */
+.Chloe-sidebar {
+    width: 280px;
+    min-width: 0;
+    height: 900px;
+    background-color: #fffdf7;
+    border: 3px solid #18243d;
+    border-radius: 0 65px 65px 0;
+    box-shadow: 8px 8px 0 #ff9999;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.Chloe-info-box {
+    padding: 15px;
+}
+
+.Chloe-section {
+    margin-bottom: 35px;
+}
+
+.Chloe-section-title {
+    background-color: #f5f1e8;
+    padding: 8px 15px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 15px 0 20px;
+    border-radius: 0;
+    border: none;
+    letter-spacing: 2px;
+}
+
+.Chloe-contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 15px;
+    margin: 14px 0;
+    line-height: 1.5;
+}
+
+.Chloe-icon {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    background-color: #ff6666;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    flex-shrink: 0;
+}
+
+/* SOFT SKILLS */
+.Chloe-skill {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    line-height: 1.3;
+}
+
+.Chloe-bar {
+    width: 100%;
+    height: 9px;
+    border: 1px solid #18243d;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+.Chloe-fill {
+    height: 100%;
+    background-color: #ff6666;
+}
+
+/* LANGUAGE */
+.Chloe-pie-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+.Chloe-pie-chart {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 2px solid #222;
+    background-image: conic-gradient(
+        #8b2635 0% 45%,
+        #c85a68 45% 75%,
+        #e5989b 75% 100%
+    );
+}
+
+.Chloe-labels-right {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    text-align: left;
+}
+
+.Chloe-label-right-side {
+    text-align: left;
+}
+
+.Chloe-label-left {
+    text-align: right;
+}
+
+/* ABOUT CONTAINER */
+.Chloe-about-container {
+    width: 100%;
+    max-width: 450px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #f5f1e8;
+    align-items: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.Chloe-about-title {
+    background-color: #fffdf7;
+    color: black;
+    padding: 10px 40px;
+    width: 240px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 auto;
+    border: 3px solid #18243d;
+    border-radius: 10px;
+    box-shadow: 8px 8px 0 #f0e68c;
+}
+
+.Chloe-about-text {
+    background-color: #f5f1e8;
+    color: #222;
+    font-size: 16px;
+    line-height: 1.5;
+    width: 100%;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+/* EXPERIENCE AND EDUCATION */
+.Chloe-exp-item {
+    margin-bottom: 22px;
+}
+
+.Chloe-exp-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.Chloe-dot {
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.Chloe-exp-role {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.Chloe-exp-company {
+    font-style: italic;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.Chloe-exp-desc {
+    margin-left: 22px;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+/* HOBBIES */
+.Chloe-photo-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.Chloe-photo-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+    width: 100px;
+    flex: 0 0 100px;
+}
+
+.Chloe-photo-card img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 2px solid #18243d;
+    border-radius: 6px;
+    margin-bottom: 5px;
+}
+
+.Chloe-photo-card span {
+    font-size: 12px;
+    font-weight: 600;
+    color: #222;
+    text-align: center;
+}
